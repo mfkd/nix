@@ -48,6 +48,15 @@
     variant = "";
   };
 
+  # Add systemd logind configuration for lid switch
+  services.logind = {
+    extraConfig = ''
+      HandleLidSwitch=ignore
+      HandleLidSwitchExternalPower=ignore
+      HandleLidSwitchDocked=ignore
+    '';
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mfkd = {
     isNormalUser = true;
