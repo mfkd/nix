@@ -91,6 +91,9 @@
     bat
     tmux
     htop
+    unzip
+    gnumake
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
