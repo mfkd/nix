@@ -24,6 +24,12 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  services.resolved.enable = true;
+
+  networking.nameservers = [ "1.1.1.1" "1.0.0.1" "8.8.8.8" "8.8.4.4" ];
+
+  networking.networkmanager.dns = "systemd-resolved";
+
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
