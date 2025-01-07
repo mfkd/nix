@@ -87,6 +87,7 @@
   environment.systemPackages = with pkgs; [
     vim
     neovim
+    jq
     git
     curl
     fzf
