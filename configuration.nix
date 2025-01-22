@@ -84,6 +84,7 @@
   environment.systemPackages = with pkgs; [
     vim
     neovim
+    starship
     jq
     git
     curl
